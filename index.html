@@ -8,6 +8,15 @@
     <title>Blog</title>
     <style>
       :root{
+        --cor-primaria: #A6CEFE;
+        --cor-segundaria:#98caff;
+        --cor-fundo: #0f172a;
+        --cor-texto: #FFFFFF;
+        --cor-contraste: #1e293b;
+        --cor-botao: #151428;
+        --fonte-texto:
+      }
+      .tema-escuro{
         --cor-primaria: #183C63;
         --cor-segundaria:#3a638e
         --cor-fundo: #FFFFFF;
@@ -15,8 +24,21 @@
         --cor-contraste: #f3eef7;
         --cor-botao: #f9f9f9;
       }
+      .tema-escuro a {
+        color: var(--cor-segundaria);
+      }
+      
+      .tema-escuro p {
+        color: var(--cor-texto);
+      }
+      
+      .tema-escuro header p {
+        color: var(--cor-contraste);
+      }
+      
       body{
         max-widgth: 100vw;
+        fonte-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
       header{
         background-color: var(--cor-primaria);
