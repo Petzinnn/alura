@@ -7,26 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <style>
+      :root{
+        --cor-primaria: #183C63;
+        --cor-segundaria:#3a638e
+        --cor-fundo: #FFFFFF;
+        --cor-texto: #151428;
+        --cor-contraste: #f3eef7;
+        --cor-botao: #f9f9f9;
+      }
       body{
         max-widgth: 100vw;
       }
       header{
-        background-color: #183C63;
-        color: #FFFFFF;
+        background-color: var(--cor-primaria);
+        color: var(--cor-contraste);
         text-align: center;
         margin: 0 auto;
         padding: 16px;
       }
       main{
-        background-color: #FFFFFF;
-        color: #183C63;
+        background-color: var(--cor-fundo);
+        color: var(--cor-primaria);
         margin: 0 auto;
         padding: 16px;
         display: flex;
       }
       article{
         display: flex;
-        border: 1px solid #183C63;
+        border: 1px solid var(--cor-primaria);
         margin: 16px;
         gap: 16px;
         padding: 16px;
@@ -45,7 +53,7 @@
     </style>
   </head>
   <body>
-    <header> 
+    <header class="tema escuro"> 
       <h1>Minha página sobre receitas.</h1>
       <p1>Aqui vou compartilhar receitas e curiosidades culinárias, de forma didática e simples a todos.</p1>
     </header>
