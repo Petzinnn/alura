@@ -1,29 +1,28 @@
-
 <!DOCTYPE html>
-
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <style>
-      :root{
+      :root {
         --cor-primaria: #A6CEFE;
-        --cor-segundaria:#98caff;
+        --cor-segundaria: #98caff;
         --cor-fundo: #0f172a;
         --cor-texto: #FFFFFF;
         --cor-contraste: #1e293b;
         --cor-botao: #151428;
-        --fonte-texto:
       }
-      .tema-escuro{
+      
+      .tema-escuro {
         --cor-primaria: #183C63;
-        --cor-segundaria:#3a638e
+        --cor-segundaria: #3a638e;
         --cor-fundo: #FFFFFF;
         --cor-texto: #151428;
         --cor-contraste: #f3eef7;
         --cor-botao: #f9f9f9;
       }
+
       .tema-escuro a {
         color: var(--cor-segundaria);
       }
@@ -36,25 +35,30 @@
         color: var(--cor-contraste);
       } 
       
-      body{-c
-        max-widgth: 100vw;
-        fonte-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      body {
+        max-width: 100vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
       }
-      header{
+
+      header {
         background-color: var(--cor-primaria);
         color: var(--cor-contraste);
         text-align: center;
         margin: 0 auto;
         padding: 16px;
       }
-      main{
+
+      main {
         background-color: var(--cor-fundo);
         color: var(--cor-primaria);
         margin: 0 auto;
         padding: 16px;
         display: flex;
+        flex-wrap: wrap;
       }
-      article{
+
+      article {
         display: flex;
         border: 1px solid var(--cor-primaria);
         margin: 16px;
@@ -65,13 +69,17 @@
         align-items: center;
         text-align: center;
       }
+
       img {
         width: 160px;
         height: 160px;
+        object-fit: cover;
       }
+
       .artigo-autor {
         font-weight: bold;
       }
+
       .btn-tema-escuro {
         position: fixed;
         bottom: 16px;
@@ -79,160 +87,93 @@
         font-size: 32px;
         padding: 12px;
         background-color: var(--cor-primaria);
+        border: none;
         border-radius: 50%;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
     <header> 
       <h1>Minha página sobre receitas.</h1>
-      <p1>Aqui vou compartilhar receitas e curiosidades culinárias, de forma didática e simples a todos.</p1>
+      <p>Aqui vou compartilhar receitas e curiosidades culinárias, de forma didática e simples a todos.</p>
     </header>
       
-  <main>
-    <article>
-      <img src="df899ddf-153c-485b-9100-56f95e43f691.png" alt="ThomazReceitas - blog de receitas, culinária e dicas de cozinha com logo ilustrado contendo chapéu de chef, ingredientes frescos, utensílios culinários e livro de receitas.">
-      <div>
-        <h2>Receita de pizza</h2> 
-        <p class="artigo-autor">Por: Gabriel Thomaz</p>
-        <p>Ingredientes
+    <main>
+      <article>
+        <img src="df899ddf-153c-485b-9100-56f95e43f691.png" alt="ThomazReceitas - logo do blog">
+        <div>
+          <h2>Receita de pizza</h2> 
+          <p class="artigo-autor">Por: Gabriel Thomaz</p>
+          <p>
+            <strong>Ingredientes:</strong><br>
+            <strong>Massa:</strong> 1 xícara e 1/2 de farinha de trigo, 1/2 xícara de água morna, 1 colher (chá) de fermento biológico seco, 1 colher (sopa) de azeite, 1 pitada de sal e de açúcar.<br><br>
+            <strong>Recheio:</strong> 1/2 xícara de molho de tomate, 1 linguiça calabresa fatiada fino, 150g de queijo muçarela ralado, 1/2 cebola fatiada em rodelas, azeitonas e orégano a gosto.<br><br>
+            <strong>Modo de Preparo:</strong><br>
+            Misture a água, o fermento, o açúcar, o azeite e o sal. Adicione a farinha aos poucos até soltar das mãos. Deixe descansar por 20 minutos. Abra a massa em formato redondo e transfira para uma assadeira untada. Pré-asse a 200°C por 5 minutos. Espalhe o molho, o queijo, a calabresa, a cebola e as azeitonas. Finalize com orégano e volte ao forno por mais 10 a 15 minutos.
+          </p>
+          <p class="artigo-fonte">Fonte: Vozes da minha cabeça</p>
+          <button class="btn-voto">👍<span>0</span></button>
+          <button class="btn-voto">👎<span>0</span></button>
+        </div>
+      </article>
 
-Massa
+      <article>
+        <img src="df899ddf-153c-485b-9100-56f95e43f691.png" alt="ThomazReceitas - logo do blog">
+        <div>
+          <h2>Receita de Cookie</h2> 
+          <p class="artigo-autor">Por: Gabriel Thomaz</p>
+          <p>
+            <strong>Ingredientes:</strong><br>
+            100g de manteiga derretida, 1/2 xícara de açúcar mascavo (ou refinado), 1 ovo, 1 xícara e 1/2 de farinha de trigo, 1/2 colher (chá) de fermento em pó, 100g de gotas de chocolate.<br><br>
+            <strong>Modo de Preparo:</strong><br>
+            Misture a manteiga com o açúcar até virar um creme. Adicione o ovo e bata bem. Acrescente a farinha e o fermento até formar uma massa homogênea. Misture o chocolate. Faça bolinhas, coloque em uma assadeira untada e dê uma leve amassadinha. Asse a 180°C por 12 a 15 minutos.
+          </p>
+          <p class="artigo-fonte">Fonte: Vozes da minha cabeça</p>
+          <button class="btn-voto">👍<span>0</span></button>
+          <button class="btn-voto">👎<span>0</span></button>
+        </div>
+      </article>
 
-1 xícara e 1/2 de farinha de trigo
+      <article>
+        <img src="df899ddf-153c-485b-9100-56f95e43f691.png" alt="ThomazReceitas - logo do blog">
+        <div>
+          <h2>Receita de Bolo</h2> 
+          <p class="artigo-autor">Por: Gabriel Thomaz</p>
+          <p>
+            <strong>Ingredientes:</strong><br>
+            3 ovos, 2 xícaras de farinha de trigo, 1 xícara e 1/2 de açúcar, 1/2 xícara de óleo, 1 xícara de leite, 1 colher (sopa) de fermento em pó.<br><br>
+            <strong>Modo de Preparo:</strong><br>
+            Bata os ovos, o açúcar, o óleo e o leite. Adicione a farinha aos poucos e misture bem. Acrescente o fermento delicadamente. Despeje em uma forma untada e enfarinhada. Asse a 180°C por 35 a 40 minutos.
+          </p>
+          <p class="artigo-fonte">Fonte: Vozes da minha cabeça</p>
+          <button class="btn-voto">👍<span>0</span></button>
+          <button class="btn-voto">👎<span>0</span></button>
+        </div>
+      </article>
 
-1/2 xícara de água morna
+      <button class="btn-tema-escuro">🌗</button>
+    </main>
 
-1 colher (chá) de fermento biológico seco
-
-1 colher (sopa) de azeite
-
-1 pitada de sal e de açúcar
-
-Recheio
-
-1/2 xícara de molho de tomate
-
-1 linguiça calabresa fatiada fino
-
-150g de queijo muçarela ralado
-
-1/2 cebola fatiada em rodelas
-
-Azeitonas e orégano a gosto
-
-Modo de Preparo
-
-Massa: Misture a água, o fermento, o açúcar, o azeite e o sal. Adicione a farinha aos poucos até soltar das mãos. Deixe descansar por 20 minutos.
-
-Abre a massa com um rolo em formato redondo e transfira para uma assadeira untada.
-
-Pré-asse a massa em forno pré-aquecido a 200°C por cerca de 5 minutos.
-
-Montagem: Espalhe o molho de tomate, cubra co m a muçarela, distribua a calabresa, a cebola e as azeitonas. Finalize com orégano.
-
-Volte ao forno a 200°C por mais 10 a 15 minutos até o queijo derreter e a borda dourar.</p>
-        <p class="artigo-fonte">Fonte: Vozes da minha cabeça</p>
-        <button>👍<span>0</span></button>
-        <button>👎<span>0</span></button>
-      </div>
-    </article>
-    <article>
-      <img src="df899ddf-153c-485b-9100-56f95e43f691.png" alt="ThomazReceitas - blog de receitas, culinária e dicas de cozinha com logo ilustrado contendo chapéu de chef, ingredientes frescos, utensílios culinários e livro de receitas.">
-      <div>
-        <h2>Receita de Cookie</h2> 
-        <p class="artigo-autor">Por: Gabriel Thomaz</p>
-        <p>Ingredientes
-
-100g de manteiga derretida
-1/2 xícara de açúcar mascavo (ou refinado)
-1 ovo
-1 xícara e 1/2 de farinha de trigo
-1/2 colher (chá) de fermento em pó
-100g de gotas ou pedaços de chocolate
-Modo de Preparo
-Misture a manteiga derretida com o açúcar até virar um creme.
-Adicione o ovo e bata bem.
-Acrescente a farinha de trigo e o fermento, misturando até formar uma massa homogênea.
-Misture o chocolate na massa.
-Faça bolinhas com as mãos, coloque em uma assadeira untada (deixando espaço entre elas) e dê uma leve amassadinha no topo.
-Asse em forno pré-aquecido a 180°C por cerca de 12 a 15 minutos (eles saem meio macios do forno, mas endurecem ao esfriar).</p>
-        <p class="artigo-fonte">Fonte: Vozes da minha cabeça</p>
-        <button>👍<span>0</span></button>
-        <button>👎<span>0</span></button>
-      </div>
-    </article>
-    <article>
-      <img src="df899ddf-153c-485b-9100-56f95e43f691.png" alt="ThomazReceitas - blog de receitas, culinária e dicas de cozinha com logo ilustrado contendo chapéu de chef, ingredientes frescos, utensílios culinários e livro de receitas.">
-      <div>
-        <h2>Receita de Bolo</h2> 
-        <p class="artigo-autor">Por: Gabriel Thomaz</p>
-        <p>Ingredientes
-
-3 ovos
-
-2 xícaras de farinha de trigo
-
-1 xícara e 1/2 de açúcar
-
-1/2 xícara de óleo (ou manteiga)
-
-1 xícara de leite
-
-1 colher (sopa) de fermento em pó
-
-Modo de Preparo
-
-No liquidificador ou na mão, bata os ovos, o açúcar, o óleo e o leite até misturar bem.
-
-Adicione a farinha de trigo aos poucos e misture até a massa ficar lisa.
-
-Acrescente o fermento e misture delicadamente com uma colher.
-
-Despeje a massa em uma forma untada e enfarinhada.
-
-Asse em forno pré-aquecido a 180°C por cerca de 35 a 40 minutos (faça o teste do palito: se sair limpo, está pronto).</p>
-        <p class="artigo-fonte">Fonte: Vozes da minha cabeça</p>
-        <button>👍<span>0</span></button>
-        <button>👎<span>0</span></button>
-      </div>
+    <script>
+      // Seleciona apenas os botões de votação para aplicar a contagem
+      const botoesVoto = document.querySelectorAll(".btn-voto");
       
-    </article>
+      botoesVoto.forEach(function(botao) {
+        botao.addEventListener("click", function() {
+          let texto = botao.querySelector("span");
+          texto.textContent = parseInt(texto.textContent) + 1;
+        });
+      });
 
-    <button class="btn-tema-escuro">🌗</button>
-    
-  </main>
-
-    <script src="script.js"></script>
-  </body>
-  <script>
-    
-    const botoes = document.querySelectorAll("button");
-    
-    botoes.forEach(function(botao) {
-      botao.addEventListener("click", botaoClicado);
-      function botaoClicado() {
-        console.log("fui clicado");
-        let texto = botao.querySelector("span");
-        texto.textContent++;
+      // Lógica do botão de alterar tema
+      const btnTemaEscuro = document.querySelector(".btn-tema-escuro");
+      
+      btnTemaEscuro.addEventListener("click", mudaTema);
+      
+      function mudaTema() {
+        document.body.classList.toggle("tema-escuro");
       }
-})
-const btnTemaEscuro = document.querySelector(".btn-tema-escuro");
-    
-btnTemaEscuro.addEventListener("click", mudaTema);
-    
-function mudaTema() {
-  
-  const corpoPagina = document.body;
-  
-  if (corpoPagina.classList.contains("tema-escuro")) {
-    
-    corpoPagina.classList.remove("tema-escuro");
-    
-  } else {
-    corpoPagina.classList.add("tema-escuro")
-  }
-}
-
-  </script>
+    </script>
+  </body>
 </html>
