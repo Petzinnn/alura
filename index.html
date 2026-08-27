@@ -36,7 +36,7 @@
         color: var(--cor-contraste);
       }
       
-      body{
+      body{-c
         max-widgth: 100vw;
         fonte-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
@@ -71,6 +71,15 @@
       }
       .artigo-autor {
         font-weight: bold;
+      }
+      .btn-tema-escuro {
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        font-size: 32px;
+        padding: 12px;
+        background-color: var(--cor-primaria);
+        border-radius: 50%;
       }
     </style>
   </head>
@@ -187,7 +196,11 @@ Asse em forno pré-aquecido a 180°C por cerca de 35 a 40 minutos (faça o teste
         <button>👍<span>0</span></button>
         <button>👎<span>0</span></button>
       </div>
+      
     </article>
+
+    <button class="btn-tema-escuro">🌗</button>
+    
   </main>
 
     <script src="script.js"></script>
@@ -204,6 +217,22 @@ Asse em forno pré-aquecido a 180°C por cerca de 35 a 40 minutos (faça o teste
         texto.textContent++;
       }
 })
+const btnTemaEscuro = document.querySelector(".btn-tema-escuro");
     
+btnTemaEscuro.addEventListener("click", mudaTema);
+    
+function mudaTema() {
+  
+  const corpoPagina document.body;
+  
+  if (corpoPagina.classList.contains("tema-escuro")) {
+    
+    corpoPagina.classList.remove("tema-escuro");
+    
+  } else {
+    corpoPagina.classList.add("tema-escuro")
+  }
+}
+
   </script>
 </html>
